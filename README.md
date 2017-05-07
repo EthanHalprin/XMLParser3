@@ -22,6 +22,8 @@ instance in our array, provided the tag is 'film'. We'll also keep the last elem
 
  `parseErrorOccurred` - I recommend tampering the XML a bit to see this routine invocation. It it supplied with a special error code representing a specific error in XML Validation.
 
+*REMARK: Besides these methods, there are a lot more on `XMLParserDelegate` for special cases as parsing runs. Advisable to take a glance. 
+
 More:
  * See also remarks in code - they're explanatory.
  * Output window in runtime debug also show the XML and the result in a nice format
