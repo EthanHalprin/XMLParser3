@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Tarantino-Filmography>
+    <film name="Reservoir Dogs" year="1992">
+        <producer>Lawrence Bender</producer>
+        <star>Harvey Keitel</star>
+        <time>99</time>
+        <budget>1200000</budget>
+        <box_office>2800000</box_office>
+    </film>
+    <film name="Pulp Fiction" year="1994">
+        <producer>Lawrence Bender</producer>
+        <star>John Travolta</star>
+        <time>154</time>
+        <budget>8500000</budget>
+        <box_office>213000000</box_office>
+    </film>
+    <film name="From Dusk till Dawn" year="1996">
+        <producer>Gianni Nunnari</producer>
+        <star>George Clooney</star>
+        <time>108</time>
+        <budget>19000000</budget>
+        <box_office>25000000</box_office>
+    </film>
+    <film name="Kill Bill 1" year="2003">
+        <producer>Lawrence Bender</producer>
+        <star>Uma Thurman</star>
+        <time>111</time>
+        <budget>30000000</budget>
+        <box_office>180000000</box_office>
+    </film>
+    <film name="Kill Bill 2" year="2004">
+        <producer>Lawrence Bender</producer>
+        <star>Uma Thurman</star>
+        <time>136</time>
+        <budget>30000000</budget>
+        <box_office>152000000</box_office>
+    </film>
+    <film name="Django Unchained" year="2012">
+        <producer>Stacey Sher</producer>
+        <star>Jamie Foxx</star>
+        <time>166</time>
+        <budget>100000000</budget>
+        <box_office>425000000</box_office>
+    </film>
+</Tarantino-Filmography>

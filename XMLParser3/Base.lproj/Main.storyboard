@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XMLParser3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XMLParser3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9L-CZ-lLz">
+                                <rect key="frame" x="87.5" y="28" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YLe-ve-iFd"/>
+                                    <constraint firstAttribute="width" constant="200" id="igA-Jg-teo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XML original in file:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ly-LJ-ev3">
+                                <rect key="frame" x="47.5" y="103" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OAZ-6p-PCW"/>
+                                    <constraint firstAttribute="width" constant="280" id="v5U-0F-vue"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIh-Rt-12z" userLabel="XML Text View">
+                                <rect key="frame" x="47.5" y="132" width="280" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IIw-Fr-6lu"/>
+                                    <constraint firstAttribute="width" constant="280" id="Zls-rb-818"/>
+                                </constraints>
+                                <mutableString key="text">&lt;?xml version="1.0"?&gt;
+&lt;Tarantino-Filmography&gt;
+    &lt;film name="Reservoir Dogs" year="1992"&gt;
+        &lt;producer&gt;"Lawrence Bender&lt;/producer&gt;
+        &lt;star&gt;Harvey Keitel&lt;/star&gt;
+        &lt;time&gt;99&lt;/time&gt;
+        &lt;budget&gt;1200000&lt;/budget&gt;
+        &lt;box_office&gt;2800000&lt;/box_office&gt;
+    &lt;/film&gt;
+    &lt;film name="Pulp Fiction" year="1994"&gt;
+        &lt;producer&gt;Lawrence Bender&lt;/producer&gt;
+        &lt;star&gt;John Travolta&lt;/star&gt;
+        &lt;time&gt;154&lt;/time&gt;
+        &lt;budget&gt;8500000&lt;/budget&gt;
+        &lt;box_office&gt;213000000&lt;/box_office&gt;
+    &lt;/film&gt;
+    &lt;film name="From Dusk till Dawn" year="1996"&gt;
+        &lt;producer&gt;Gianni Nunnari&lt;/producer&gt;
+        &lt;star&gt;George Clooney&lt;/star&gt;
+        &lt;time&gt;108&lt;/time&gt;
+        &lt;budget&gt;19000000&lt;/budget&gt;
+        &lt;box_office&gt;25000000&lt;/box_office&gt;
+    &lt;/film&gt;
+    &lt;film name="Kill Bill 1" year="2003"&gt;
+        &lt;producer&gt;Lawrence Bender&lt;/producer&gt;
+        &lt;star&gt;Uma Thurman&lt;/star&gt;
+        &lt;time&gt;111&lt;/time&gt;
+        &lt;budget&gt;30000000&lt;/budget&gt;
+        &lt;box_office&gt;180000000&lt;/box_office&gt;
+    &lt;/film&gt;
+    &lt;film name="Kill Bill 2" year="2004"&gt;
+        &lt;producer&gt;Lawrence Bender&lt;/producer&gt;
+        &lt;star&gt;Uma Thurman&lt;/star&gt;
+        &lt;time&gt;136&lt;/time&gt;
+        &lt;budget&gt;30000000&lt;/budget&gt;
+        &lt;box_office&gt;152000000&lt;/box_office&gt;
+    &lt;/film&gt;
+    &lt;film name="Django Unchained" year="2012"&gt;
+        &lt;producer&gt;Stacey Sher&lt;/producer&gt;
+        &lt;star&gt;Jamie Foxx&lt;/star&gt;
+        &lt;time&gt;166&lt;/time&gt;
+        &lt;budget&gt;100000000&lt;/budget&gt;
+        &lt;box_office&gt;425000000&lt;/box_office&gt;
+    &lt;/film&gt;
+&lt;/Tarantino-Filmography&gt;
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elx-sJ-6e4" userLabel="Parse Button">
+                                <rect key="frame" x="143" y="341" width="88" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="dWu-80-az8"/>
+                                    <constraint firstAttribute="height" constant="35" id="xVu-gC-SWw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="parse">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="parseButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zi9-pe-0Xf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGR-hz-aJC">
+                                <rect key="frame" x="165" y="384" width="44" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="BcI-de-aAS"/>
+                                    <constraint firstAttribute="width" constant="44" id="hqL-wV-s1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film array in app memory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJg-Bv-UYC">
+                                <rect key="frame" x="47" y="423" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="igY-e5-wMV"/>
+                                    <constraint firstAttribute="height" constant="21" id="qpk-dE-mfp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUt-U7-Udo" userLabel="Data Text View">
+                                <rect key="frame" x="47" y="447" width="280" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="PLp-C9-vSe"/>
+                                    <constraint firstAttribute="height" constant="200" id="YsG-yd-wCc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.00060858219776715159" blue="0.12317475630769237" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Ly-LJ-ev3" firstAttribute="top" secondItem="H9L-CZ-lLz" secondAttribute="bottom" constant="35" id="4uS-xj-Pgu"/>
+                            <constraint firstItem="NIh-Rt-12z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="5uz-Kh-tS2"/>
+                            <constraint firstItem="yJg-Bv-UYC" firstAttribute="top" secondItem="rGR-hz-aJC" secondAttribute="bottom" constant="8" id="7fl-BA-T29"/>
+                            <constraint firstItem="NIh-Rt-12z" firstAttribute="top" secondItem="5Ly-LJ-ev3" secondAttribute="bottom" constant="8" id="Fyg-zA-MRA"/>
+                            <constraint firstItem="yJg-Bv-UYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G0w-cT-xqV"/>
+                            <constraint firstItem="H9L-CZ-lLz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IkY-LA-qwM"/>
+                            <constraint firstItem="bUt-U7-Udo" firstAttribute="top" secondItem="yJg-Bv-UYC" secondAttribute="bottom" constant="3" id="J9A-74-U3M"/>
+                            <constraint firstItem="rGR-hz-aJC" firstAttribute="top" secondItem="elx-sJ-6e4" secondAttribute="bottom" constant="8" id="S6q-Aw-20h"/>
+                            <constraint firstItem="H9L-CZ-lLz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ViM-Xq-4Yj"/>
+                            <constraint firstItem="bUt-U7-Udo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cIU-1K-nbS"/>
+                            <constraint firstItem="rGR-hz-aJC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1o-wE-ZFu"/>
+                            <constraint firstItem="elx-sJ-6e4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o02-F5-zxV"/>
+                            <constraint firstItem="NIh-Rt-12z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rCH-9X-XT4"/>
+                            <constraint firstItem="elx-sJ-6e4" firstAttribute="top" secondItem="NIh-Rt-12z" secondAttribute="bottom" constant="9" id="tpf-eL-dVM"/>
+                            <constraint firstItem="5Ly-LJ-ev3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zGm-OI-Ms9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowDownLabel" destination="rGR-hz-aJC" id="8LV-yH-x5G"/>
+                        <outlet property="memoryTextView" destination="bUt-U7-Udo" id="Q8w-lF-0Sk"/>
+                        <outlet property="parseButton" destination="elx-sJ-6e4" id="mzN-rg-jcR"/>
+                        <outlet property="xmlTextView" destination="NIh-Rt-12z" id="Hrl-dZ-caF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
